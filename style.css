@@ -42,7 +42,19 @@ nav li a:hover{
 }
 .banner{
     height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('pantanal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner2{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('bg-2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,4 +113,9 @@ nav li a:hover{
     100%{
         transform: scale(1);
     }
+}
+
+.text-paragrafo {
+    font-size: 6px;
+    color: white;
 }
