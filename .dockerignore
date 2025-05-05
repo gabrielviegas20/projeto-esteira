@@ -1,0 +1,12 @@
+node_modules
+.parcel-cache
+dist
+*.log
+*.tmp
+Dockerfile
+docker-compose.yml
+.dockerignore
+tests
+.vscode
+.idea
+.env
