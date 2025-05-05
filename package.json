@@ -1,0 +1,31 @@
+{
+  "name": "projeto-esteira",
+  "version": "1.0.0",
+  "description": "Este repositório contém um projeto simples desenvolvido com o objetivo de apoiar o Treinamento da Esteira EBDevOps.",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && parcel build src/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielviegas20/projeto-esteira.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielviegas20/projeto-esteira/issues"
+  },
+  "homepage": "https://github.com/gabrielviegas20/projeto-esteira#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "parcel": "^2.14.4"
+  },
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
+}

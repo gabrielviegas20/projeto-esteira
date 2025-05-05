@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: projeto-esteira
+    ports:
+      - "8084:80"
+    restart: unless-stopped

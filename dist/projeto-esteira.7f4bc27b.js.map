@@ -1,0 +1,1 @@
+{"mappings":"","sources":["src/main.js"],"sourcesContent":["function soma(a, b) {\n    return a + b;\n  }\n  \n  module.exports = { soma };\n  "],"names":[],"version":3,"file":"projeto-esteira.7f4bc27b.js.map"}
