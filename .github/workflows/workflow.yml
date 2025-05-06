@@ -34,7 +34,7 @@ jobs:
           name: dist
           path: dist
 
-  docker-publish:
+  release:
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
@@ -60,7 +60,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 🐳 Build da imagem Docker
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/projeto-esteira:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/projeto-esteira-github:latest .
 
       - name: 🚀 Push da imagem para o Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/projeto-esteira:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/projeto-esteira-github:latest

@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: projeto-esteira
+    container_name: projeto-esteira-github
     ports:
       - "8084:80"
     restart: unless-stopped
